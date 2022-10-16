@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CategoryView" customModule="testingheaders" customModuleProvider="target">
+            <connections>
+                <outlet property="categoryStackView" destination="W6Y-TF-ifa" id="9DL-vh-Cm9"/>
+                <outlet property="contentView" destination="M9t-Ta-A02" id="qpk-Sm-gWm"/>
+                <outlet property="scrollView" destination="T9b-2N-qYt" id="4ui-7Z-GsX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="M9t-Ta-A02">
+            <rect key="frame" x="0.0" y="0.0" width="460" height="117"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T9b-2N-qYt">
+                    <rect key="frame" x="0.0" y="16" width="460" height="85"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="67" placeholderIntrinsicHeight="896" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="W6Y-TF-ifa">
+                            <rect key="frame" x="16" y="0.0" width="67" height="85"/>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="W6Y-TF-ifa" firstAttribute="top" secondItem="T9b-2N-qYt" secondAttribute="top" id="8kV-dZ-Mor"/>
+                        <constraint firstAttribute="trailing" secondItem="W6Y-TF-ifa" secondAttribute="trailing" constant="16" id="EQ9-qV-fZE"/>
+                        <constraint firstItem="W6Y-TF-ifa" firstAttribute="height" secondItem="T9b-2N-qYt" secondAttribute="height" id="YfQ-y0-7xr"/>
+                        <constraint firstItem="W6Y-TF-ifa" firstAttribute="leading" secondItem="T9b-2N-qYt" secondAttribute="leading" constant="16" id="Z5p-ZD-JwP"/>
+                        <constraint firstAttribute="bottom" secondItem="W6Y-TF-ifa" secondAttribute="bottom" id="vU1-gk-btX"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fQ0-qr-A9L"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="T9b-2N-qYt" secondAttribute="bottom" constant="16" id="Ruw-AI-9gu"/>
+                <constraint firstItem="T9b-2N-qYt" firstAttribute="leading" secondItem="fQ0-qr-A9L" secondAttribute="leading" id="Zqz-Py-bMa"/>
+                <constraint firstItem="fQ0-qr-A9L" firstAttribute="trailing" secondItem="T9b-2N-qYt" secondAttribute="trailing" id="aTP-MM-KY1"/>
+                <constraint firstItem="T9b-2N-qYt" firstAttribute="top" secondItem="M9t-Ta-A02" secondAttribute="top" constant="16" id="x9i-FU-s6z"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="271.01449275362319" y="-270.87053571428572"/>
+        </view>
+    </objects>
+</document>
