@@ -1,6 +1,8 @@
 # Hammers-Systems
 Тестовое задание Hammers Systems
 
+<img width="50%" alt="readme image" src="https://user-images.githubusercontent.com/26817252/199234659-41e0a1a8-f850-41e5-b2fa-ddb37d84621a.png">
+
 ## Что надо сделать:
 - Реализовать главный экран для приложения доставки еды
 - В баннеры можно захардкодить любые фото
